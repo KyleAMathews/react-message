@@ -12,3 +12,6 @@ so:
 * .message--error
 * .message--warning
 * .message--info
+
+## Demo
+http://kyleamathews.github.io/react-message/
