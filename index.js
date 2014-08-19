@@ -2,6 +2,12 @@ var React = require('react');
 var Message = require('../src/index');
 
 React.renderComponent(React.DOM.div(null, [
+  React.DOM.h2(null, "React-Message"),
+  React.DOM.a({href:"https://github.com/KyleAMathews/react-message"}, "Github"),
+  React.DOM.br(),
+  React.DOM.br(),
+  React.DOM.br(),
+  React.DOM.br(),
   React.DOM.code(null, "<Message type='error' messages={['I'm an error']} />"),
   React.DOM.br(),
   React.DOM.br(),
