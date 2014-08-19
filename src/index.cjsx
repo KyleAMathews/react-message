@@ -14,4 +14,4 @@ module.exports = React.createClass
         <div className={className}>{messages}</div>
       )
     else
-      return <span />
+      return <noscript />
