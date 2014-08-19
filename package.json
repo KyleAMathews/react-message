@@ -1,10 +1,10 @@
 {
-  "name": "react-component-starter",
-  "description": "A collection of loading indicators animated with CSS for React",
-  "version": "0.4.1",
+  "name": "react-message",
+  "description": "React component for showing status messages",
+  "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
-    "url": "https://github.com/KyleAMathews/react-component-starter/issues"
+    "url": "https://github.com/KyleAMathews/react-message/issues"
   },
   "devDependencies": {
     "cjsx-loader": "^0.2.0",
@@ -15,10 +15,12 @@
     "style-loader": "^0.7.0",
     "webpack": "^1.3.3-beta2"
   },
-  "homepage": "https://github.com/KyleAMathews/react-component-starter",
+  "homepage": "https://github.com/KyleAMathews/react-message",
   "keywords": [
     "react",
-    "react-component"
+    "react-component",
+    "status",
+    "messages"
   ],
   "license": "MIT",
   "main": "dist/index.js",
@@ -27,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/KyleAMathews/react-component-starter.git"
+    "url": "https://github.com/KyleAMathews/react-message.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
