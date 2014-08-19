@@ -1,7 +1,7 @@
 {
   "name": "react-component-starter",
   "description": "A collection of loading indicators animated with CSS for React",
-  "version": "0.4.1",
+  "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
     "url": "https://github.com/KyleAMathews/react-component-starter/issues"
