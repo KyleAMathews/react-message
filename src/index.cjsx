@@ -6,7 +6,7 @@ module.exports = React.createClass
     messages: React.PropTypes.array
 
   render: ->
-    className = "messages--#{@props.type}"
+    className = "message message--#{@props.type}"
 
     if @props.messages.length > 0
       messages = @props.messages.map (message) -> <p>{message}</p>
@@ -14,4 +14,4 @@ module.exports = React.createClass
         <div className={className}>{messages}</div>
       )
     else
-      return <span />
+      return <noscript />

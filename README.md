@@ -4,7 +4,7 @@ react-messages
 React component for showing error, warning, info messages.
 
 ## Install
-`npm install react-messages`
+`npm install react-message`
 
 ## CSS
 This is a BYOC (Bring Your Own CSS) component.
