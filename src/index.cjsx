@@ -2,8 +2,11 @@ React = require 'react'
 
 module.exports = React.createClass
   propTypes:
-    type: React.PropTypes.oneOf(['error', 'info', 'warning'])
+    type: React.PropTypes.oneOf(['error', 'info', 'warning']).isRequired
     messages: React.PropTypes.array
+
+  getDefaultProps: ->
+    messages: []
 
   render: ->
     className = "message message--#{@props.type}"
