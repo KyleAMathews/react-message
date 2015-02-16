@@ -1,29 +1,36 @@
 var path = require('path');
 var webpack = require('webpack');
 
-
 module.exports = {
   entry: [
+    "webpack-dev-server/client?http://0.0.0.0:8080",
+    'webpack/hot/only-dev-server',
     './examples/index'
   ],
-	output: {
+  devServer: {
+    contentBase: './examples/'
+  },
+  devtool: "eval",
+  debug: true,
+  output: {
     path: path.join(__dirname, 'examples'),
-		filename: 'bundle.js',
-	},
-	resolveLoader: {
-		modulesDirectories: ['node_modules']
-	},
-	resolve: {
-		extensions: ['', '.js', '.cjsx', '.coffee']
-	},
+    filename: 'bundle.js',
+  },
+  resolveLoader: {
+    modulesDirectories: ['node_modules']
+  },
   plugins: [
-    new webpack.DefinePlugin({'process.env.NODE_ENV': '"production"'}),
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    new webpack.IgnorePlugin(/un~$/)
   ],
-	module: {
-		loaders: [
+  resolve: {
+    extensions: ['', '.js', '.cjsx', '.coffee']
+  },
+  module: {
+    loaders: [
       { test: /\.css$/, loaders: ['style', 'css']},
-      { test: /\.cjsx$/, loaders: ['coffee', 'cjsx']},
+      { test: /\.cjsx$/, loaders: ['react-hot', 'coffee', 'cjsx']},
       { test: /\.coffee$/, loader: 'coffee' }
     ]
   }

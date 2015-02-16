@@ -12,8 +12,11 @@
     "coffee-react": "^2.4.1",
     "coffee-script": "^1.9.0",
     "css-loader": "^0.9.1",
+    "react": "^0.12.2",
+    "react-hot-loader": "^1.1.5",
     "style-loader": "^0.8.3",
-    "webpack": "^1.5.3"
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
   },
   "homepage": "https://github.com/KyleAMathews/react-message",
   "keywords": [
