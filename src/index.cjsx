@@ -2,14 +2,21 @@ React = require 'react'
 
 module.exports = React.createClass
   propTypes:
-    type: React.PropTypes.oneOf(['error', 'info', 'warning'])
+    type: React.PropTypes.oneOf(['error', 'info', 'warning']).isRequired
     messages: React.PropTypes.array
+
+  getDefaultProps: ->
+    messages: []
 
   render: ->
     className = "message message--#{@props.type}"
 
     if @props.messages.length > 0
-      messages = @props.messages.map (message) -> <p>{message}</p>
+      messages = @props.messages.map (message) ->
+        if React.isValidElement message
+          message
+        else
+          <p>{message}</p>
       return (
         <div className={className}>{messages}</div>
       )
