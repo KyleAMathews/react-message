@@ -1,10 +1,13 @@
 React = require('react')
 Message = require('../src/index')
+Typography = require 'typography'
+typography = new Typography()
+typography.injectStyles()
+{Container} = require 'react-responsive-grid'
 
-console.log Message
 Examples = React.createClass
   render: ->
-    <div>
+    <Container style={{padding: typography.rhythm(1)}}>
       <h1>React Message</h1>
       <a href="https://github.com/KyleAMathews/react-message">Github</a>
       <br />
@@ -32,6 +35,14 @@ Examples = React.createClass
       <br />
       <br />
 
+      <code>{'<Message style={{background: "blue", color: "yellow"}} type="info" messages={["I have custom styles"]} />'}</code>
+      <br />
+      <br />
+      <Message style={{background: 'blue', color: 'yellow'}} type="info" messages={["I have custom styles"]} />
+      <br />
+      <br />
+
+      <p>You can pass both strings and elements into <Message></p>
       <code>{'<Message type="info" messages={[<img src="http://fillmurray.com/600/200" />]} />'}</code>
       <br />
       <br />
@@ -40,6 +51,6 @@ Examples = React.createClass
       />
       <br />
       <br />
-    </div>
+    </Container>
 
 React.render((<Examples />), document.body)

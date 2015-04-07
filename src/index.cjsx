@@ -12,13 +12,18 @@ module.exports = React.createClass
     className = "message message--#{@props.type}"
 
     if @props.messages.length > 0
-      messages = @props.messages.map (message) ->
+      messages = @props.messages.map (message, i) =>
+        if i + 1 is @props.messages.length
+          last = 0
+        else
+          last = "inherit"
+
         if React.isValidElement message
           message
         else
-          <p>{message}</p>
+          <p style={{marginBottom: last}}>{message}</p>
       return (
-        <div className={className}>{messages}</div>
+        <div {...@props} className={className}>{messages}</div>
       )
     else
       return <noscript />
