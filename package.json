@@ -1,7 +1,7 @@
 {
   "name": "react-message",
   "description": "React component for showing status messages",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
     "url": "https://github.com/KyleAMathews/react-message/issues"
