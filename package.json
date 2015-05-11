@@ -9,16 +9,17 @@
   "devDependencies": {
     "cjsx-loader": "^2.0.1",
     "coffee-loader": "^0.7.2",
-    "coffee-react": "^3.0.1",
-    "coffee-script": "^1.9.1",
-    "css-loader": "^0.9.1",
-    "react": "^0.13.1",
-    "react-hot-loader": "^1.2.4",
+    "coffee-react": "^3.2.0",
+    "coffee-script": "^1.9.2",
+    "css-loader": "^0.12.0",
+    "node-libs-browser": "^0.5.0",
+    "react": "^0.13.3",
+    "react-hot-loader": "^1.2.7",
     "react-responsive-grid": "^0.1.2",
-    "style-loader": "^0.9.0",
-    "typography": "^0.2.0",
-    "webpack": "^1.8.0",
-    "webpack-dev-server": "^1.8.0"
+    "style-loader": "^0.12.2",
+    "typography": "^0.3.0",
+    "webpack": "^1.9.4",
+    "webpack-dev-server": "^1.8.2"
   },
   "homepage": "https://github.com/KyleAMathews/react-message",
   "keywords": [
@@ -38,5 +39,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "object-assign": "^2.0.0"
   }
 }

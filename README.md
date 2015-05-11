@@ -1,7 +1,7 @@
 react-messages
 =======================
 
-React component for showing error, warning, info messages.
+React component for showing error, warning, and info messages.
 
 ## Install
 `npm install react-message`
@@ -27,6 +27,12 @@ so:
 * .message--error
 * .message--warning
 * .message--info
+
+You can also add styles using inline style objects.
+
+To set styles for individual messages use the `messageStyle` prop.
+
+To set styles for the wrapper div, use the `wrapperStyle` prop.
 
 ## Demo
 http://kyleamathews.github.io/react-message/
